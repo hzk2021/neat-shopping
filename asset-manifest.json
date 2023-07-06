@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/neat-shopping/static/css/main.b1a383ca.css",
+    "main.js": "/neat-shopping/static/js/main.a249ce95.js",
+    "static/media/bg.jpg": "/neat-shopping/static/media/bg.a5fa560c5a51a8d94915.jpg",
+    "index.html": "/neat-shopping/index.html",
+    "main.b1a383ca.css.map": "/neat-shopping/static/css/main.b1a383ca.css.map",
+    "main.a249ce95.js.map": "/neat-shopping/static/js/main.a249ce95.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b1a383ca.css",
+    "static/js/main.a249ce95.js"
+  ]
+}
