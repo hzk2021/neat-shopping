@@ -21,7 +21,7 @@ function App() {
 
         <Routes>
             <Route path="/">
-              <Route index element={<Home />} />
+              <Route index element={<Home src={bgImage}/>} />
               <Route path="home" element={<Home src={bgImage}/>} />
               <Route path="store" element={<Store />} />
               <Route path="cart" element={<Cart />} />
