@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/neat-shopping/static/css/main.b1a383ca.css",
-    "main.js": "/neat-shopping/static/js/main.ed3db5d4.js",
+    "main.js": "/neat-shopping/static/js/main.54525ab6.js",
     "static/media/bg.jpg": "/neat-shopping/static/media/bg.a5fa560c5a51a8d94915.jpg",
     "index.html": "/neat-shopping/index.html",
     "main.b1a383ca.css.map": "/neat-shopping/static/css/main.b1a383ca.css.map",
-    "main.ed3db5d4.js.map": "/neat-shopping/static/js/main.ed3db5d4.js.map"
+    "main.54525ab6.js.map": "/neat-shopping/static/js/main.54525ab6.js.map"
   },
   "entrypoints": [
     "static/css/main.b1a383ca.css",
-    "static/js/main.ed3db5d4.js"
+    "static/js/main.54525ab6.js"
   ]
 }
