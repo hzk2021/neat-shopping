@@ -5,10 +5,12 @@ import { useEffect, useState} from "react";
 import { ItemCard } from "../components/ItemCard";
 import { CartContext } from "../contexts/CartContext";
 import { Container, Row } from "react-bootstrap";
+import { LoadingSpinner } from "../components/LoadingSpinner";
 
 export function Store() {
     const [items, setItems] = useState([]);
     const c = useContext(CartContext);
+    const [loading, setLoading] = useState(true);
 
     async function retrieveItems() {
         let itemsArray = [];
@@ -29,8 +31,7 @@ export function Store() {
             } catch(e) {
                 console.error(e.toString());
             }
-        }
-    
+        }    
         return itemsArray;
     }
 
@@ -49,26 +50,34 @@ export function Store() {
     }
 
     useEffect(() => {
-        retrieveItems().then(result => setItems(result));
+        retrieveItems().then(result => {
+             setItems(result);
+             setLoading(false);
+        })
     }, []);
     
     return (
         <>
-            <Container className="mh-100" style={{padding: "6rem 0 "} }>
+            <Container className="min-vh-100 d-flex align-items-center justify-content-center" style={{padding: "6rem 0 "} }>
                 <Row className="gap-5 d-flex justify-content-center">
-                {items.map(item => {
-                    return <ItemCard
-                        image ={item.image}
-                        description ={item.description}
-                        price ={item.price}
-                        title ={item.title}
-                        action ={addItemToCart.bind(this,  item.image,
-                                                        item.description,
-                                                        item.price,
-                                                        item.title,
-                                                        1)}
-                    />
-                })}
+
+                    {
+                        loading ? <LoadingSpinner className={"align-self-center"}/>
+                        :
+                        items.map(item => {
+                            return <ItemCard
+                                image ={item.image}
+                                description ={item.description}
+                                price ={item.price}
+                                title ={item.title}
+                                action ={addItemToCart.bind(this,  item.image,
+                                                                item.description,
+                                                                item.price,
+                                                                item.title,
+                                                                1)}
+                            />
+                        })
+                    }
                 </Row>
             </Container>
 
