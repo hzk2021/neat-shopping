@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/neat-shopping/static/css/main.b1a383ca.css",
-    "main.js": "/neat-shopping/static/js/main.54525ab6.js",
-    "static/media/bg.jpg": "/neat-shopping/static/media/bg.a5fa560c5a51a8d94915.jpg",
-    "index.html": "/neat-shopping/index.html",
-    "main.b1a383ca.css.map": "/neat-shopping/static/css/main.b1a383ca.css.map",
-    "main.54525ab6.js.map": "/neat-shopping/static/js/main.54525ab6.js.map"
+    "main.css": "./static/css/main.b1a383ca.css",
+    "main.js": "./static/js/main.fdd8ccf3.js",
+    "static/media/bg.jpg": "./static/media/bg.a5fa560c5a51a8d94915.jpg",
+    "index.html": "./index.html",
+    "main.b1a383ca.css.map": "./static/css/main.b1a383ca.css.map",
+    "main.fdd8ccf3.js.map": "./static/js/main.fdd8ccf3.js.map"
   },
   "entrypoints": [
     "static/css/main.b1a383ca.css",
-    "static/js/main.54525ab6.js"
+    "static/js/main.fdd8ccf3.js"
   ]
 }
